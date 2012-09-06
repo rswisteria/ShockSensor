@@ -1,12 +1,12 @@
 # ShockSensor
 
-ShockSensor��Android���ŗ��p�����3�������x�Z���T�[����̓��͂��󂯎��ABump�݂����ȃA�v����
-���p�����Փ˃A�N�V���������m���A�C�x���g�𔭍s���邽�߂̃��C�u�����ł��B
+ShockSensorはAndroid等で利用される3軸加速度センサーからの入力を受け取り、Bumpみたいなアプリで
+利用される衝突アクションを感知し、イベントを発行するためのライブラリです。
 
 # Getting Start
 
-ShockSensor�͏Փ˂����m�����ۂɃC�x���g�𔭍s����I�u�U�[�o�[�Ƃ��ċ@�\���܂��B
-�Փ˂����������Ƃ��Ɏ��s�������C�x���g��ShockSensorListener�C���^�[�t�F�C�X�����N���X�Ƃ��Ď������܂��B
+ShockSensorは衝突を感知した際にイベントを発行するオブザーバーとして機能します。
+衝突が発生したときに実行したいイベントをShockSensorListenerインターフェイスを持つクラスとして実装します。
 
     public class SampleActivity extends Activity
             implements ShockSensorListener, SensorEventListener {
@@ -33,22 +33,22 @@ ShockSensor�͏Փ˂����m�����ۂɃC�x���g�𔭍s����I�u�U�[�o�[�Ƃ��ċ@�\���܂��B
         }
         
         public void onShocked(ShockEvent event) {
-            // ShockSensorListener�̃C���^�[�t�F�C�X���������郁�\�b�h
-            // �Փ˂����������ۂɎ��s�������������L�q
+            // ShockSensorListenerのインターフェイスを実装するメソッド
+            // 衝突が発生した際に実行したい処理を記述
         }
     }
 
-Android�ŗ��p����ꍇ�A��L�̂悤�ɉ����x�Z���T�[�����������A�����x�Z���T�[�̒l���ύX�����ۂ�
-�Ăяo�����onSensorChanged�ŁAShockSensor#input���Ăяo���܂��B����ɂ��A�ω���������x
-��ShockSensor�ɒ�����͂���A���͂��ꂽ�����x���Փ˂ƌ��Ȃ���ShockSensor#addShockSensorListener
-�œo�^����Ă���C�x���g���X�i�[��onShocked���\�b�h���Ăяo���܂��B
+Androidで利用する場合、上記のように加速度センサーを初期化し、加速度センサーの値が変更した際に
+呼び出されるonSensorChangedで、ShockSensor#inputを呼び出します。これにより、変化する加速度
+がShockSensorに逐一入力され、入力された加速度を衝突と見なすとShockSensor#addShockSensorListener
+で登録されているイベントリスナーのonShockedメソッドを呼び出します。
 
-�Փˎ��̂���r�I�Z�����Ԃ̉����x�̕ω��𔺂��A���̔��f���s���K�v�����邽�߁A�����x�Z���T�[�̎擾�p�x��
-SENSOR_DELAY_GAME(20ms��1�x���炢�̕p�x�ŉ����x���擾�\)�ɐݒ肷��K�v������܂��B
-SENSOR_DELAY_UI��SENSOR_DELAY_NORMAL���x�̕p�x���ƁA�����炭�Փ˂����m�ł��Ȃ��͂��ł��B
+衝突自体が比較的短い時間の加速度の変化を伴い、その判断を行う必要があるため、加速度センサーの取得頻度は
+SENSOR_DELAY_GAME(20msに1度くらいの頻度で加速度を取得可能)に設定する必要があります。
+SENSOR_DELAY_UIやSENSOR_DELAY_NORMAL程度の頻度だと、おそらく衝突が検知できないはずです。
 
-# �Փˌ��m�̎d�g��
+# 衝突検知の仕組み
 
-�[���̏Փ˂̂悤�ȉ����x�̓����Ƃ��āA�[���̋}��~�ɂ��}�������Z���Ԃɔ������邱�Ƃ��グ���܂��B
-���̃��C�u�����ł́A�����x�Z���T�[����擾�ł���l����d�͉����x����菜���A���̃x�N�g���̑傫���i�X�J���l�j
-���Z���Ԃő����������Ƃ����ω��������ꍇ�ɁA������Փ˂Ɣ��肷��悤�Ɏ������Ă���܂��B
+端末の衝突のような加速度の特徴として、端末の急停止による急加速が短時間に発生することが上げられます。
+このライブラリでは、加速度センサーから取得できる値から重力加速度を取り除き、そのベクトルの大きさ（スカラ値）
+が短時間で増加→減少という変化をした場合に、それを衝突と判定するように実装してあります。

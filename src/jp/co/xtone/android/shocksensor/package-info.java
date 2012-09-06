@@ -1,5 +1,5 @@
 /**
- * �Ռ������m������A�C�x���g�𔭍s����V���b�N�Z���T�[.
- * ��{�I�ɂ͉����x�Z���T�[�̒��ۓx���グ�āA�C�x���g�̔��s���s���B
+ * 衝撃を感知したら、イベントを発行するショックセンサー.
+ * 基本的には加速度センサーの抽象度を上げて、イベントの発行を行う。
  */
 package jp.co.xtone.android.shocksensor;

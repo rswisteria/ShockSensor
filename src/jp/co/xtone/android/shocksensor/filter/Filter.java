@@ -1,7 +1,7 @@
 package jp.co.xtone.android.shocksensor.filter;
 
 /**
- * ƒ[ƒpƒXƒtƒBƒ‹ƒ^“™AŽÀ”‚ð“ü—Í‚µAŽÀ”‚ðo—Í‚Æ‚µ‚Ä“¾‚ç‚ê‚éƒtƒBƒ‹ƒ^‚Ì‚½‚ß‚ÌƒCƒ“ƒ^[ƒtƒFƒCƒX.
+ * ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿ç­‰ã€å®Ÿæ•°ã‚’å…¥åŠ›ã—ã€å®Ÿæ•°ã‚’å‡ºåŠ›ã¨ã—ã¦å¾—ã‚‰ã‚Œã‚‹ãƒ•ã‚£ãƒ«ã‚¿ã®ãŸã‚ã®ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ã‚¤ã‚¹.
  *
  * @author TOYOTA, Yoichi
  *
@@ -9,10 +9,10 @@ package jp.co.xtone.android.shocksensor.filter;
 public interface Filter {
 
     /**
-     * ƒtƒBƒ‹ƒ^ˆ—‚ðs‚¤.
+     * ãƒ•ã‚£ãƒ«ã‚¿å‡¦ç†ã‚’è¡Œã†.
      *
-     * @param input “ü—Í’l
-     * @return ƒtƒBƒ‹ƒ^[‚³‚ê‚½o—Í’l
+     * @param input å…¥åŠ›å€¤
+     * @return ãƒ•ã‚£ãƒ«ã‚¿ãƒ¼ã•ã‚ŒãŸå‡ºåŠ›å€¤
      */
     double filter(double input);
 }

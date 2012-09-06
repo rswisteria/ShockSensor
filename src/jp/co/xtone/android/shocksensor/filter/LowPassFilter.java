@@ -1,12 +1,12 @@
 package jp.co.xtone.android.shocksensor.filter;
 
 /**
- * ŠÈˆÕ“I‚Èƒ[ƒpƒXƒtƒBƒ‹ƒ^‚ğÀŒ»‚·‚éƒNƒ‰ƒX.
+ * ç°¡æ˜“çš„ãªãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿ã‚’å®Ÿç¾ã™ã‚‹ã‚¯ãƒ©ã‚¹.
  *
  * vn = vn-1 * factor + input * (1-factor)
  *
- * vn: ƒtƒBƒ‹ƒ^’Ê‰ßŒã‚Ì’l vn-1: ‘O‰ñ‚ÌƒtƒBƒ‹ƒ^’Ê‰ßŒã‚Ì’l factor: ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Åw’è‚·‚éƒ[ƒpƒXƒtƒBƒ‹ƒ^‚Ì‹­‚³‚Ì’l(0 < factor
- * < 1) input: “ü—Í’l
+ * vn: ãƒ•ã‚£ãƒ«ã‚¿é€šéå¾Œã®å€¤ vn-1: å‰å›ã®ãƒ•ã‚£ãƒ«ã‚¿é€šéå¾Œã®å€¤ factor: ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã§æŒ‡å®šã™ã‚‹ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿ã®å¼·ã•ã®å€¤(0 < factor
+ * < 1) input: å…¥åŠ›å€¤
  *
  * @author TOYOTA, Yoichi
  *
@@ -14,19 +14,19 @@ package jp.co.xtone.android.shocksensor.filter;
 public class LowPassFilter implements Filter {
 
     /**
-     * ƒtƒBƒ‹ƒ^‚Ì‹­“x‚ğ•\‚·ŒW”.
+     * ãƒ•ã‚£ãƒ«ã‚¿ã®å¼·åº¦ã‚’è¡¨ã™ä¿‚æ•°.
      */
     private double factor;
 
     /**
-     * ƒ[ƒpƒXƒtƒBƒ‹ƒ^’Ê‰ßŒã‚Ì’l.
+     * ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿é€šéå¾Œã®å€¤.
      */
     private double low;
 
     /**
-     * ƒ[ƒpƒXƒtƒBƒ‹ƒ^‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬‚·‚é.
+     * ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹.
      *
-     * @param pFactor ƒtƒBƒ‹ƒ^‹­“x (0 < factor < 1)
+     * @param pFactor ãƒ•ã‚£ãƒ«ã‚¿å¼·åº¦ (0 < factor < 1)
      */
     public LowPassFilter(final double pFactor) {
         this.factor = pFactor;
@@ -34,10 +34,10 @@ public class LowPassFilter implements Filter {
     }
 
     /**
-     * “ü—Í’l‚É‘Î‚µ‚Äƒ[ƒpƒXƒtƒBƒ‹ƒ^ˆ—‚ğs‚¤.
+     * å…¥åŠ›å€¤ã«å¯¾ã—ã¦ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿å‡¦ç†ã‚’è¡Œã†.
      *
-     * @param input “ü—Í’l
-     * @return ƒ[ƒpƒXƒtƒBƒ‹ƒ^’Ê‰ßŒã‚Ìo—Í’l
+     * @param input å…¥åŠ›å€¤
+     * @return ãƒ­ãƒ¼ãƒ‘ã‚¹ãƒ•ã‚£ãƒ«ã‚¿é€šéå¾Œã®å‡ºåŠ›å€¤
      */
     public final double filter(final double input) {
         if (low == Double.MAX_VALUE) {

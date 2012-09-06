@@ -44,7 +44,7 @@ public class ShockSensorTest implements ShockSensorListener {
     }
 
     /**
-     * Õ“Ë‚Ìƒ|ƒWƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ğ”­‰Î‚·‚é‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¸ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç«ã™ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputPositive1() {
@@ -57,12 +57,12 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertTrue("shock_1‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚È‚¢", isCalled);
-        assertFalse("shock_1‚Ìƒ‚[ƒVƒ‡ƒ“‚Å•¡”‰ñ‚ÌƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚¢‚é", doubleCalled);
+        assertTrue("shock_1ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œãªã„", isCalled);
+        assertFalse("shock_1ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°å›ã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã„ã‚‹", doubleCalled);
     }
     
     /**
-     * Õ“Ë‚Ìƒ|ƒWƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ğ”­‰Î‚·‚é‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¸ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç«ã™ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputPositive2() {
@@ -75,12 +75,12 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertTrue("shock_2‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚È‚¢", isCalled);
-        assertFalse("shock_2‚Ìƒ‚[ƒVƒ‡ƒ“‚Å•¡”‰ñ‚ÌƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚¢‚é", doubleCalled);
+        assertTrue("shock_2ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œãªã„", isCalled);
+        assertFalse("shock_2ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°å›ã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã„ã‚‹", doubleCalled);
     }
     
     /**
-     * Õ“Ë‚Ìƒ|ƒWƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ğ”­‰Î‚·‚é‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¸ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç«ã™ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputPositive3() {
@@ -93,12 +93,12 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertTrue("shock_3‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚È‚¢", isCalled);
-        assertFalse("shock_3‚Ìƒ‚[ƒVƒ‡ƒ“‚Å•¡”‰ñ‚ÌƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚¢‚é", doubleCalled);
+        assertTrue("shock_3ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œãªã„", isCalled);
+        assertFalse("shock_3ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°å›ã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã„ã‚‹", doubleCalled);
     }
     
     /**
-     * Õ“Ë‚Ìƒ|ƒWƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ğ”­‰Î‚·‚é‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¸ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç«ã™ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputPositive4() {
@@ -111,12 +111,12 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertTrue("shock_4‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚È‚¢", isCalled);
-        assertFalse("shock_4‚Ìƒ‚[ƒVƒ‡ƒ“‚Å•¡”‰ñ‚ÌƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚¢‚é", doubleCalled);
+        assertTrue("shock_4ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œãªã„", isCalled);
+        assertFalse("shock_4ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°å›ã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã„ã‚‹", doubleCalled);
     }
     
     /**
-     * Õ“Ë‚Ìƒ|ƒWƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ğ”­‰Î‚·‚é‚©‚Ç‚¤‚©‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¸ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆã‚’ç™ºç«ã™ã‚‹ã‹ã©ã†ã‹ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputPositive5() {
@@ -129,12 +129,12 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertTrue("shock_5‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚È‚¢", isCalled);
-        assertFalse("shock_5‚Ìƒ‚[ƒVƒ‡ƒ“‚Å•¡”‰ñ‚ÌƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚¢‚é", doubleCalled);
+        assertTrue("shock_5ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œãªã„", isCalled);
+        assertFalse("shock_5ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°å›ã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã„ã‚‹", doubleCalled);
     }
     
     /**
-     * Õ“Ë‚ÌƒlƒKƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ª”­‰Î‚µ‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç«ã—ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputNegative1() {
@@ -147,11 +147,11 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertFalse("shock_negative_1‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚µ‚Ü‚¤", isCalled);
+        assertFalse("shock_negative_1ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã—ã¾ã†", isCalled);
     }
 
     /**
-     * Õ“Ë‚ÌƒlƒKƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ª”­‰Î‚µ‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç«ã—ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputNegative2() {
@@ -164,11 +164,11 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertFalse("shock_negative_2‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚µ‚Ü‚¤", isCalled);
+        assertFalse("shock_negative_2ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã—ã¾ã†", isCalled);
     }
 
     /**
-     * Õ“Ë‚ÌƒlƒKƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ª”­‰Î‚µ‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç«ã—ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputNegative3() {
@@ -181,11 +181,11 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertFalse("shock_negative_2‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚µ‚Ü‚¤", isCalled);
+        assertFalse("shock_negative_2ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã—ã¾ã†", isCalled);
     }
 
     /**
-     * Õ“Ë‚ÌƒlƒKƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ª”­‰Î‚µ‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç«ã—ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputNegative4() {
@@ -198,11 +198,11 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertFalse("shock_negative_2‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚µ‚Ü‚¤", isCalled);
+        assertFalse("shock_negative_2ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã—ã¾ã†", isCalled);
     }
 
     /**
-     * Õ“Ë‚ÌƒlƒKƒeƒBƒuƒf[ƒ^‚ğ“Ç‚İ‚İA‚»‚ê‚ªÕ“Ë”»’è‚ÌƒCƒxƒ“ƒg‚ª”­‰Î‚µ‚È‚¢‚±‚Æ‚ğŠm”F‚·‚é
+     * è¡çªã®ãƒã‚¬ãƒ†ã‚£ãƒ–ãƒ‡ãƒ¼ã‚¿ã‚’èª­ã¿è¾¼ã¿ã€ãã‚ŒãŒè¡çªåˆ¤å®šã®ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºç«ã—ãªã„ã“ã¨ã‚’ç¢ºèªã™ã‚‹
      */
     @Test
     public void testInputNegative5() {
@@ -215,11 +215,11 @@ public class ShockSensorTest implements ShockSensorListener {
             sensor.input(accel, m.time);
         }
 
-        assertFalse("shock_negative_5‚Ìƒ‚[ƒVƒ‡ƒ“‚ÅƒCƒxƒ“ƒg‚ª”­s‚³‚ê‚Ä‚µ‚Ü‚¤", isCalled);
+        assertFalse("shock_negative_5ã®ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã§ã‚¤ãƒ™ãƒ³ãƒˆãŒç™ºè¡Œã•ã‚Œã¦ã—ã¾ã†", isCalled);
     }
 
     /**
-     * ƒ‚[ƒVƒ‡ƒ“ƒtƒ@ƒCƒ‹‚ªæ“¾‚Å‚«‚é
+     * ãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ãƒ•ã‚¡ã‚¤ãƒ«ãŒå–å¾—ã§ãã‚‹
      */
     @Test
     public void fileTest() {
@@ -243,7 +243,7 @@ public class ShockSensorTest implements ShockSensorListener {
             return (List<Motion>)obj;
         } catch (Exception e) {
             e.printStackTrace();
-            fail("ƒeƒXƒgƒ‚[ƒVƒ‡ƒ“‚Ì“Ç‚İ‚İ‚É¸”s");
+            fail("ãƒ†ã‚¹ãƒˆãƒ¢ãƒ¼ã‚·ãƒ§ãƒ³ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—");
         }
         return null;
     }

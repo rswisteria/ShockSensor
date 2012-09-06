@@ -3,7 +3,7 @@ package jp.co.xtone.android.shocksensor;
 import jp.co.xtone.android.shocksensor.event.ShockEvent;
 
 /**
- * ÕŒ‚‚ğŠ´’m‚µ‚½ê‡‚É’Ê’m‚³‚ê‚éƒCƒxƒ“ƒg‚ÌƒŠƒXƒi[.
+ * è¡æ’ƒã‚’æ„ŸçŸ¥ã—ãŸå ´åˆã«é€šçŸ¥ã•ã‚Œã‚‹ã‚¤ãƒ™ãƒ³ãƒˆã®ãƒªã‚¹ãƒŠãƒ¼.
  *
  * @author TOYOTA, Yoichi
  *
@@ -11,9 +11,9 @@ import jp.co.xtone.android.shocksensor.event.ShockEvent;
 public interface ShockSensorListener {
 
     /**
-     * ÕŒ‚‚ğŠ´’m‚µ‚½ê‡‚ÉŒÄ‚Ño‚³‚ê‚éƒƒ\ƒbƒh.
+     * è¡æ’ƒã‚’æ„ŸçŸ¥ã—ãŸå ´åˆã«å‘¼ã³å‡ºã•ã‚Œã‚‹ãƒ¡ã‚½ãƒƒãƒ‰.
      *
-     * @param event ƒCƒxƒ“ƒgƒIƒuƒWƒFƒNƒg
+     * @param event ã‚¤ãƒ™ãƒ³ãƒˆã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
      */
     void onShocked(ShockEvent event);
 }

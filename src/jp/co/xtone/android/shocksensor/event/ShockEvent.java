@@ -5,7 +5,7 @@ import java.util.EventObject;
 import jp.co.xtone.android.shocksensor.ShockSensor;
 
 /**
- * Õ“ËƒCƒxƒ“ƒgî•ñ‚ğ‚ÂƒIƒuƒWƒFƒNƒg.
+ * è¡çªã‚¤ãƒ™ãƒ³ãƒˆæƒ…å ±ã‚’æŒã¤ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ.
  *
  * @author TOYOTA, Yoichi
  *
@@ -13,43 +13,43 @@ import jp.co.xtone.android.shocksensor.ShockSensor;
 public class ShockEvent extends EventObject {
 
     /**
-     * ƒVƒŠƒAƒ‹ƒo[ƒWƒ‡ƒ“ID.
+     * ã‚·ãƒªã‚¢ãƒ«ãƒãƒ¼ã‚¸ãƒ§ãƒ³ID.
      */
     private static final long serialVersionUID = -7174934985956233971L;
 
     /**
-     * Õ“Ë”»’èŠJnŠÔ.
+     * è¡çªåˆ¤å®šé–‹å§‹æ™‚é–“.
      */
     private long startTime;
 
     /**
-     * Õ“Ë‚Ì‰Á‘¬“xƒXƒJƒ‰’l‚ÌÅ‘å’l.
+     * è¡çªæ™‚ã®åŠ é€Ÿåº¦ã‚¹ã‚«ãƒ©å€¤ã®æœ€å¤§å€¤.
      */
     private float maxAccelScala;
 
     /**
-     * ƒCƒxƒ“ƒg‚ğì¬‚·‚é.
-     * @param source ƒCƒxƒ“ƒg”­¶Œ³
+     * ã‚¤ãƒ™ãƒ³ãƒˆã‚’ä½œæˆã™ã‚‹.
+     * @param source ã‚¤ãƒ™ãƒ³ãƒˆç™ºç”Ÿå…ƒ
      */
     public ShockEvent(final Object source) {
         super(source);
     }
 
     /**
-     * Õ“Ë”»’èŠJnŠÔ‚ğ‹L˜^‚·‚é.
+     * è¡çªåˆ¤å®šé–‹å§‹æ™‚é–“ã‚’è¨˜éŒ²ã™ã‚‹.
      *
-     * @param nanoTime Õ“Ë”»’èŠJnŠÔ(ƒiƒm•b)
+     * @param nanoTime è¡çªåˆ¤å®šé–‹å§‹æ™‚é–“(ãƒŠãƒç§’)
      */
     public final void setStartTime(final long nanoTime) {
         this.startTime = nanoTime;
     }
 
     /**
-     * Õ“Ë”»’è‚ªŠJn‚µ‚Ä‚©‚çA‹­§“I‚ÉFlat‚Éó‘Ô‚ğ–ß‚·ŠÔ‚ªŒo‰ß‚µ‚½‚©.
+     * è¡çªåˆ¤å®šãŒé–‹å§‹ã—ã¦ã‹ã‚‰ã€å¼·åˆ¶çš„ã«Flatã«çŠ¶æ…‹ã‚’æˆ»ã™æ™‚é–“ãŒçµŒéã—ãŸã‹.
      *
-     * @param nanoTime Œ»İ‚ÌŠÔ
-     * @param checkPlusTimeout ‰Á‘¬“x‚ªŒ¸­‚É“]‚¶‚é‚Ü‚Å‚Ìƒ^ƒCƒ€ƒAƒEƒg‚ğŒv‘ª‚·‚é‚©‚Ç‚¤‚©
-     * @return ƒ^ƒCƒ€ƒAƒEƒg‚Étrue‚ğ•Ô‚·
+     * @param nanoTime ç¾åœ¨ã®æ™‚é–“
+     * @param checkPlusTimeout åŠ é€Ÿåº¦ãŒæ¸›å°‘ã«è»¢ã˜ã‚‹ã¾ã§ã®ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆã‚’è¨ˆæ¸¬ã™ã‚‹ã‹ã©ã†ã‹
+     * @return ã‚¿ã‚¤ãƒ ã‚¢ã‚¦ãƒˆæ™‚ã«trueã‚’è¿”ã™
      */
     public final boolean isTimeout(final long nanoTime,
             final boolean checkPlusTimeout) {
@@ -63,18 +63,18 @@ public class ShockEvent extends EventObject {
     }
 
     /**
-     * Õ“Ë‚Ì‰Á‘¬“xƒXƒJƒ‰’l‚ÌÅ‘å’l‚ğİ’è‚·‚é.
+     * è¡çªæ™‚ã®åŠ é€Ÿåº¦ã‚¹ã‚«ãƒ©å€¤ã®æœ€å¤§å€¤ã‚’è¨­å®šã™ã‚‹.
      *
-     * @param scala Õ“Ë‚Ì‰Á‘¬“xƒXƒJƒ‰’l‚ÌÅ‘å’l
+     * @param scala è¡çªæ™‚ã®åŠ é€Ÿåº¦ã‚¹ã‚«ãƒ©å€¤ã®æœ€å¤§å€¤
      */
     public final void setMaxAccelScala(final float scala) {
         this.maxAccelScala = scala;
     }
 
     /**
-     * Õ“Ë‚Ì‰Á‘¬“xƒXƒJƒ‰’l‚ÌÅ‘å’l‚ğæ“¾‚·‚é.
+     * è¡çªæ™‚ã®åŠ é€Ÿåº¦ã‚¹ã‚«ãƒ©å€¤ã®æœ€å¤§å€¤ã‚’å–å¾—ã™ã‚‹.
      *
-     * @return Õ“Ë‚Ì‰Á‘¬“xƒXƒJƒ‰’l‚ÌÅ‘å’l
+     * @return è¡çªæ™‚ã®åŠ é€Ÿåº¦ã‚¹ã‚«ãƒ©å€¤ã®æœ€å¤§å€¤
      */
     public final float getMaxAccelScala() {
         return this.maxAccelScala;
