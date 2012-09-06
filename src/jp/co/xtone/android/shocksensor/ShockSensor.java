@@ -29,10 +29,10 @@ import jp.co.xtone.android.shocksensor.filter.LowPassFilter;
  *         SensorManager manager =
  *             (SensorManager)getSystemService(SENSOR_SERVICE);
  *         List<Sensor> sensors =
- *             this.sensorManager.getSensorList(Sensor.TYPE_ACCELEROMETER);
+ *             manager.getSensorList(Sensor.TYPE_ACCELEROMETER);
  *         if (sensors.size() > 0) {
  *             Sensor s = sensors.get(0);
- *             this.sensorManager.registerListener(this, s);
+ *             manager.registerListener(this, s);
  *         }
  *         shockSensor.addShockSensorListener(this);
  *     }
