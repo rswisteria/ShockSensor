@@ -71,13 +71,13 @@ public class ShockSensor {
      * 衝突判定開始から、加速度の上昇が止まるまでの最大時間(ナノ秒).
      * 加速度の変化がプラス→マイナスの状態変化を辿る際、ここで設定された時間以内に行われる必要がある。
      */
-   public static final long SHOCK_EVENT_PLUS_DURATION = 50_000_000;
+   public static final long SHOCK_EVENT_PLUS_DURATION = 50000000;
 
     /**
      * 衝突判定開始から、実際に衝突イベントを発生させるまでの最大時間(ナノ秒).
      * 加速度の変化がプラス→マイナス→静止の状態変化を辿る際、ここで設定された時間以内に行われる必要がある。
      */
-    public static final long SHOCK_EVENT_DURATION = 200_000_000;
+    public static final long SHOCK_EVENT_DURATION = 200000000;
 
     /**
      * 衝突と判定するための加速度スカラ値の閾値.
@@ -93,12 +93,12 @@ public class ShockSensor {
     /**
      * 1秒あたりのナノ秒.
      */
-    public static final long NANO_SEC = 1_000_000_000;
+    public static final long NANO_SEC = 1000000000;
 
     /**
      * ここで指定した値より短い間隔の入力は無視する.
      */
-    public static final long IGNORE_DELTA_TIME_THRESHOLD = 100_000;
+    public static final long IGNORE_DELTA_TIME_THRESHOLD = 100000;
 
     /**
      * 衝突イベントが発生したときに通知するイベントリスナー.

@@ -9,10 +9,10 @@
     </target>
     
     <target name="compile" depends="prepare">
-        <javac srcdir="src" destdir="${classes}" />
+        <javac includeantruntime="false" source="1.6" target="1.6" srcdir="src" destdir="${classes}" />
     </target>
 
-    <target name="dist" depends="compile">
+    <target name="dist" depends="clean,compile">
         <jar basedir="${classes}" jarfile="${dist}/shock-sensor.jar" />
     </target>
     
