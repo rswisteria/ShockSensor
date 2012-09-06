@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ShockSensor" basedir="./" default="dist">
+    <property name="classes" value="classes" />
+    <property name="dist" value="dist" />
+    
+    <target name="prepare">
+        <mkdir dir="${classes}" />
+        <mkdir dir="${dist}" />
+    </target>
+    
+    <target name="compile" depends="prepare">
+        <javac srcdir="src" destdir="${classes}" />
+    </target>
+
+    <target name="dist" depends="compile">
+        <jar basedir="${classes}" jarfile="${dist}/shock-sensor.jar" />
+    </target>
+    
+    <target name="clean">
+        <delete dir="${classes}" />
+        <delete dir="${dist}" />
+    </target>
+</project>
