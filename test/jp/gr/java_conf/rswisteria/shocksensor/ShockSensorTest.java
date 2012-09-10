@@ -1,7 +1,7 @@
 /**
  * 
  */
-package jp.co.xtone.android.shocksensor;
+package jp.gr.java_conf.rswisteria.shocksensor;
 
 import static org.junit.Assert.*;
 
@@ -13,7 +13,9 @@ import java.io.ObjectInputStream;
 import java.util.List;
 
 import jp.co.xtone.accel.Motion;
-import jp.co.xtone.android.shocksensor.event.ShockEvent;
+import jp.gr.java_conf.rswisteria.shocksensor.ShockSensor;
+import jp.gr.java_conf.rswisteria.shocksensor.ShockSensorListener;
+import jp.gr.java_conf.rswisteria.shocksensor.event.ShockEvent;
 
 import org.junit.Before;
 import org.junit.Test;

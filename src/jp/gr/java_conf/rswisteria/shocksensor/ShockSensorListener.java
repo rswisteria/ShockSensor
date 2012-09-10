@@ -1,6 +1,6 @@
-package jp.co.xtone.android.shocksensor;
+package jp.gr.java_conf.rswisteria.shocksensor;
 
-import jp.co.xtone.android.shocksensor.event.ShockEvent;
+import jp.gr.java_conf.rswisteria.shocksensor.event.ShockEvent;
 
 /**
  * 衝撃を感知した場合に通知されるイベントのリスナー.

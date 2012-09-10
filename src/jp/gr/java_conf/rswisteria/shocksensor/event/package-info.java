@@ -1,4 +1,4 @@
 /**
  * 衝突に関するイベントオブジェクトを扱うパッケージ.
  */
-package jp.co.xtone.android.shocksensor.event;
+package jp.gr.java_conf.rswisteria.shocksensor.event;

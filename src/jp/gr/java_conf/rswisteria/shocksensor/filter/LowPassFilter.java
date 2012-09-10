@@ -1,4 +1,4 @@
-package jp.co.xtone.android.shocksensor.filter;
+package jp.gr.java_conf.rswisteria.shocksensor.filter;
 
 /**
  * 簡易的なローパスフィルタを実現するクラス.

@@ -1,4 +1,4 @@
-package jp.co.xtone.android.shocksensor.filter;
+package jp.gr.java_conf.rswisteria.shocksensor.filter;
 
 /**
  * ローパスフィルタ等、実数を入力し、実数を出力として得られるフィルタのためのインターフェイス.

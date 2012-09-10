@@ -1,11 +1,11 @@
-package jp.co.xtone.android.shocksensor;
+package jp.gr.java_conf.rswisteria.shocksensor;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import jp.co.xtone.android.shocksensor.event.ShockEvent;
-import jp.co.xtone.android.shocksensor.filter.Filter;
-import jp.co.xtone.android.shocksensor.filter.LowPassFilter;
+import jp.gr.java_conf.rswisteria.shocksensor.event.ShockEvent;
+import jp.gr.java_conf.rswisteria.shocksensor.filter.Filter;
+import jp.gr.java_conf.rswisteria.shocksensor.filter.LowPassFilter;
 
 /**
  * Androidの加速度センサーから衝突系のアクションを感知し、イベントを通知するクラス。

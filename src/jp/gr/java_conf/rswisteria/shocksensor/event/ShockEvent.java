@@ -1,8 +1,8 @@
-package jp.co.xtone.android.shocksensor.event;
+package jp.gr.java_conf.rswisteria.shocksensor.event;
 
 import java.util.EventObject;
 
-import jp.co.xtone.android.shocksensor.ShockSensor;
+import jp.gr.java_conf.rswisteria.shocksensor.ShockSensor;
 
 /**
  * 衝突イベント情報を持つオブジェクト.
